@@ -7,8 +7,6 @@ import Grid from "@material-ui/core/Grid";
 import SideBar from "./components/SideBar";
 import ChatList from "./components/ChatList";
 import SearchBar from "./components/SearchBar";
-import FilterListIcon from "@material-ui/icons/FilterList";
-import IconButton from "@material-ui/core/IconButton";
 import FilterModal from "./components/FilterModal";
 
 const useStyles = makeStyles((theme) => ({
@@ -26,10 +24,6 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
-
-  const handleFilterClick = () => {
-    return <FilterModal />;
-  };
 
   return (
     <div className="App">
